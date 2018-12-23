@@ -1,5 +1,6 @@
 server:
   port: 8889
+
 eureka:
   instance:
     prefer-ip-address: true # 以ip形式注册服务
