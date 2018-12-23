@@ -1,5 +1,6 @@
 server:
   port: 8766
+
 eureka:
   instance:
     prefer-ip-address: true
@@ -11,7 +12,8 @@ endpoints:
     enabled: true    # 启用 shutdown 端点
       sensitive: false  # 禁用密码验证
       path: /shutdown  # shuwdown 端点路径
+
 # 关闭安全认证
-  management:
+management:
   security:
     enabled: false

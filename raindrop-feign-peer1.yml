@@ -12,6 +12,6 @@ endpoints:
       sensitive: false  # 禁用密码验证
       path: /shutdown  # shuwdown 端点路径
 # 关闭安全认证
-  management:
+management:
   security:
     enabled: false
