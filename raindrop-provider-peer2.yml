@@ -1,0 +1,18 @@
+server:
+  port: 8889
+eureka:
+  instance:
+    prefer-ip-address: true # 以ip形式注册服务
+  client:
+    service-url:
+      defaultZone: http://admin:admin@peer1:8761/eureka/,http://admin:admin@peer2:8762/eureka/
+endpoints:
+  shutdown:
+    enabled: true    # 启用shutdown端点
+    sensitive: false  # 禁用密码验证
+    path: /shutdown  # shuwdown端点路径
+
+# 关闭安全认证
+management:
+  security:
+    enabled: false
