@@ -17,3 +17,10 @@ endpoints:
 management:
   security:
     enabled: false
+
+  rabbitmq:
+    host: 132.232.96.97
+    port: 5672
+    username: admin
+    password: admin
+
