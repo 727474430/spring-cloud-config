@@ -4,16 +4,16 @@ server:
 eureka:
   instance:
     prefer-ip-address: true  # 使用 ip 注册服务
-   client:
+  client:
     service-url:
       defaultZone: http://admin:admin@peer1:8761/eureka/,http://admin:admin@peer2:8762/eureka/
 endpoints:
   shutdown:
     enabled: true    # 启用 shutdown 端点
-     sensitive: false  # 禁用密码验证
-     path: /shutdown  # shutdown 路径
+    sensitive: false  # 禁用密码验证
+    path: /shutdown  # shutdown 路径
 
 # 关闭安全认证
- management:
+management:
   security:
     enabled: false
