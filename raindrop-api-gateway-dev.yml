@@ -1,3 +1,10 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://admin:admin@peer1:8761/eureka/,http://admin:admin@peer2:8762/eureka/
+
 endpoints:
   shutdown:
     enabled: true    # 启用 shutdown 端点
